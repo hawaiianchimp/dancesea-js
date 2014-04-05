@@ -10,11 +10,11 @@
     <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
     <link href="//vjs.zencdn.net/4.5/video-js.css" rel="stylesheet">
 
-    <title>Cover Template for Bootstrap</title>
+    <title>Dance Moves</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="animate.css">
 <!-- Optional theme -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
 
@@ -36,115 +36,143 @@
   <body>
     <div id="showModal" class="modal fade">
       <div class="modal-dialog">
-        <div class="modal-content">
+        <div id="modal-content" class="modal-content">
           <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h4 class="modal-title">Dance Vines</h4>
+            <button type="button" class="close close_modal" aria-hidden="true">&times;</button>
+            <h4 id="modal-title" class="modal-title">Dance Vines</h4>
           </div>
           <div id="modal-body" class="modal-body">
             <video id="vine_vid" class="video-js vjs-default-skin"
               controls preload="auto" width="500" height="500"
-              poster="DanceMoves/Bernie.jpg">
+              poster="DanceSeaLogo.png">
              <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
             </video>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-default close_modal">Close</button>
           </div>
         </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
+    
+    
+    <nav class="navbar navbar-default navbar-inverse" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.php">DanceSea</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+    
+    
+    
+    
 
     <div class="site-wrapper">
 
       <div class="site-wrapper-inner">
 
-        <div class="cover-container">
+        <div class="container">
 
           <div class="row items">
-            <div class="col-md-3">
-            <a title="bernie" href="#">
-            <img height="150" width="150" src="DanceMoves/Bernie.jpg" />
-            <h3>The Bernie</h3>
-            </a>
+            <div class="col-md-3 category animated fadeIn">
+                <span title="bernie" href="#">
+                <img class="img-rounded" height="150" width="150" src="DanceMoves/Bernie.png" />
+                <h3 class="site__title">The Bernie</h3 class="site__title">
+                </span>
             </div>
-            <div class="col-md-3">
-            <a title="dougie" href="#">
-            <img height="150" width="150" src="DanceMoves/Dougie.png" />
-            <h3>The Dougie</h3>
-            </a>
+            <div class="col-md-3 category animated fadeIn">
+                <span title="dougie" href="#">
+                <img class="img-rounded" height="150" width="150" src="DanceMoves/Dougie.png" />
+                <h3 class="site__title">The Dougie</h3 class="site__title">
+                </span>
             </div>
-            <div class="col-md-3">
-            <a title="jerkdance" href="#">
-            <img height="150" width="150" src="DanceMoves/Jerk.jpg" />
-            <h3>The Jerk</h3>
-            </a>
+            <div class="col-md-3 category animated fadeIn">
+            <span title="jerkdance" href="#">
+            <img class="img-rounded" height="150" width="150" src="DanceMoves/Jerk.png" />
+            <h3 class="site__title">The 
+            Jerk</h3 class="site__title">
+            </span>
             </div>
-            <div class="col-md-3">
-            <a title="spongebobdance" href="#">
-            <img height="150" width="150" src="" />
-            <h3>The Spongebob</h3>
-            </a>
+            <div class="col-md-3 category animated fadeIn">
+            <span title="spongebobdance" href="#">
+            <img class="img-rounded" height="150" width="150" src="DanceMoves/Spongebob.png" />
+            <h3 class="site__title">The Spongebob</h3 class="site__title">
+            </span>
             </div>
         </div>
         <br>
         <br>
         <div class="row items">
-            <div class="col-md-3">
-            <a title="shuffling" href="#">
-            <img height="150" width="150" src="DanceMoves/Bernie.jpg" />
-            <h3>Shuffling</h3>
-            </a>
+            <div class="col-md-3 category animated fadeIn">
+            <span title="shuffling" href="#">
+            <img class="img-rounded" height="150" width="150" src="DanceMoves/Shuffling.png" />
+            <h3 class="site__title">Shuffling</h3 class="site__title">
+            </span>
             </div>
-            <div class="col-md-3">
-            <a title="robotdance" href="#">
-            <img height="150" width="150" src="DanceMoves/Dougie.png" />
-            <h3>The Robot</h3>
-            </a>
+            <div class="col-md-3 category animated fadeIn">
+            <span title="robotdance" href="#">
+            <img class="img-rounded" height="150" width="150" src="DanceMoves/Robot.png" />
+            <h3 class="site__title">The Robot</h3 class="site__title">
+            </span>
             </div>
-            <div class="col-md-3">
-            <a title="spidermandance" href="#">
-            <img height="150" width="150" src="DanceMoves/Jerk.jpg" />
-            <h3>The Spiderman</h3>
-            </a>
+            <div class="col-md-3 category animated fadeIn">
+            <span title="spidermandance" href="#">
+            <img class="img-rounded" height="150" width="150" src="DanceMoves/Spiderman.png" />
+            <h3 class="site__title">The Spiderman</h3 class="site__title">
+            </span>
             </div>
-            <div class="col-md-3">
-            <a title="breakdance" href="#">
-            <img height="150" width="150" src="" />
-            <h3>Break Dancing</h3>
-            </a>
+            <div class="col-md-3 category animated fadeIn">
+            <span title="breakdance" href="#">
+            <img class="img-rounded" height="150" width="150" src="DanceMoves/BreakDance.png" />
+            <h3 class="site__title">Break Dancing</h3 class="site__title">
+            </span>
             </div>
         </div>
+        <br>
+        <br>
         <div class="row items">
-            <div class="col-md-3">
-            <a title="twerk" href="#">
-            <img height="150" width="150" src="DanceMoves/Bernie.jpg" />
-            <h3>Twerk</h3>
-            </a>
+            <div class="col-md-3 category animated fadeIn">
+            <span title="gaspedal" href="#">
+            <img class="img-rounded" height="150" width="150" src="DanceMoves/Twerk.png" />
+            <h3 class="site__title">Twerk</h3 class="site__title">
+            </span>
             </div>
-            <div class="col-md-3">
-            <a title="scarecrowdance" href="#">
-            <img height="150" width="150" src="DanceMoves/Scarecrow.png" />
-            <h3>Scarecrow</h3>
-            </a>
+            <div class="col-md-3 category animated fadeIn">
+            <span title="scarecrowdance" href="#">
+            <img class="img-rounded" height="150" width="150" src="DanceMoves/Scarecrow.png" />
+            <h3 class="site__title">The Scarecrow</h3 class="site__title">
+            </span>
             </div>
-            <div class="col-md-3">
-            <a title="spidermandance" href="#">
-            <img height="150" width="150" src="DanceMoves/Jerk.jpg" />
-            <h3>The Spiderman</h3>
-            </a>
+            <div class="col-md-3 category animated fadeIn">
+            <span title="catdaddy" href="#">
+            <img class="img-rounded" height="150" width="150" src="DanceMoves/CatDaddy.png" />
+            <h3 class="site__title">The Cat Daddy</h3 class="site__title">
+            </span>
             </div>
-            <div class="col-md-3">
-            <a title="selfie" href="#">
-            <img height="150" width="150" src="" />
-            <h3>#Selfie</h3>
-            </a>
+            <div class="col-md-3 category animated fadeIn">
+            <span title="macarana" href="#">
+            <img class="img-rounded" height="150" width="150" src="DanceMoves/Macarena.png" />
+            <h3 class="site__title">Macarana</h3 class="site__title">
+            </span>
             </div>
         </div>
+        <br>
+        <br>
           
-
-          <div class="mastfoot">
+        
+          <div class="">
             <div class="inner">
               <p>DanceSea 2014</p>
             </div>
@@ -169,14 +197,14 @@
         
         k=0;
         
-        $(".items a").on("click", function(){
-            
+        $(".items div").on("click", function(){
+        
         $.ajax({
               url: "/get.php",
               dataType: "JSON",
               type: "GET",
               data: {
-                tag: $(this).attr("title"),
+                tag: $(this).find("span").attr("title"),
               },
               success: function( data ) {
                 console.log(data);
@@ -188,12 +216,13 @@
                 }
                 loadNext();
                 $('#showModal').modal('show');
+                $('#modal-title').html($(this).find("h3").attr(""))
               }
             
         });
         });
         
-        var vinePlayer = videojs("vine_vid");
+        vinePlayer = videojs("vine_vid");
         function loadNext()
         {
             console.log(urls[(k%datalength)]);
@@ -208,7 +237,13 @@
             loadNext();
           });
           });
-    
+        
+        
+        $(".close_modal").on("click", function(){
+            $('#showModal').modal('hide');
+            vinePlayer.pause();
+        
+        });
     </script>
   </body>
 </html>

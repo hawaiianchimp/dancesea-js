@@ -159,3 +159,7 @@ body {
     width: 700px;
   }
 }
+
+.col-md-3 animated fadeIn :hover{
+    background-color: #00E6B8;
+}

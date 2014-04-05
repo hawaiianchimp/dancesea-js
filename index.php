@@ -9,11 +9,11 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
 
-    <title>Cover Template for Bootstrap</title>
+    <title>DanceSea</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="animate.css">
 <!-- Optional theme -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
 
@@ -41,7 +41,7 @@
       <div class="site-wrapper-inner">
         
         <div class="cover-container">
-          <img src="DanceSeaLogo.png" align="center" width="78%" height="30%">      
+          <img class="animated fadeInUp" src="DanceSeaLogo.png" align="center" width="78%" height="30%">      
           <div class="inner cover">
             
             <br>
@@ -49,24 +49,20 @@
             <br>
             <div>
             <!-- h1 class="cover-heading">DanceSea</h1 -->
-            <img src="waves.png" align="left" width="100%" height="40%" style="margin-bottom:5%;">
+            <img class="animated fadeInUp" src="waves.png" align="left" width="100%" height="40%" style="margin-bottom:5%;">
             </div>
             <br>
             <br>
             <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-              <a href="mainMenu.php" class="btn btn-lg btn-default">Start</a>
+              <a href="mainMenu.php" class="btn btn-success btn-lg animated fadeIn">Start</a>
             </p>
           </div>
-
-          <div class="mastfoot">
+          <br>
+          <br>
+          <br>
+          <div class="">
             <div class="inner">
-              <p>DanceSea 2014</p>
+              <p> DanceSea 2014</p>
             </div>
           </div>
 

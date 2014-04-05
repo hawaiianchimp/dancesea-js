@@ -1,8 +1,6 @@
 /*
  * Globals
  */
- 
-
 
 /* Links */
 a,
@@ -12,15 +10,20 @@ a:hover {
 }
 
 /* Custom default button */
-.btn-default,
-.btn-default:hover,
+/*.btn-default,
 .btn-default:focus {
   color: #333;
-  text-shadow: none; /* Prevent inheritence from `body` */
+  text-shadow: none;
   background-color: #fff;
   border: 1px solid #fff;
 }
 
+.btn-default:hover {
+  color: #333;
+  text-shadow: none;
+  background-color: #019275;
+  border: 1px solid #019275;
+}*/
 
 /*
  * Base structure
@@ -162,3 +165,76 @@ body {
     width: 700px;
   }
 }
+
+
+/*-----------------------------------*\
+  $OBJECTS
+\*-----------------------------------*/
+
+.butt, .input {
+  padding: .75rem;
+  margin: .375rem;
+
+  background-color: transparent;
+  border-radius: 4px;
+}
+
+  .butt:focus, .input:focus {
+    outline: none;
+  }
+
+.butt {
+  border: 2px solid #f35626;
+  line-height: 1.375;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+
+  font-weight: 700;
+
+  color: #f35626;
+
+  cursor: pointer;
+  -webkit-animation: hue 60s infinite linear;
+}
+
+  .butt--primary {
+    background-color: #f35626;
+    color: #fff;
+  }
+
+.input {
+  border: 1px solid #c0c8c9;
+  border-radius: 4px;
+}
+
+
+/*-----------------------------------*\
+  $HEADER
+\*-----------------------------------*/
+
+.site__header {
+
+}
+
+  .site__title {
+    color: #f35626;
+    background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 60s infinite linear;
+  }
+
+/*-----------------------------------*\
+  $ANIMATIONS
+\*-----------------------------------*/
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+

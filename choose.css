@@ -21,7 +21,6 @@ a:hover {
   border: 1px solid #fff;
 }
 
-
 /*
  * Base structure
  */
@@ -34,7 +33,7 @@ body {
 body {
   color: #fff;
   text-align: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  /*text-shadow: 0 1px 3px rgba(0,0,0,.5);*/
   box-shadow: inset 0 0 100px rgba(0,0,0,.5);
 }
 
@@ -160,4 +159,89 @@ body {
   .cover-container {
     width: 700px;
   }
+}
+
+
+/*-----------------------------------*\
+  $OBJECTS
+\*-----------------------------------*/
+
+.butt, .input {
+  padding: .75rem;
+  margin: .375rem;
+
+  background-color: transparent;
+  border-radius: 4px;
+}
+
+  .butt:focus, .input:focus {
+    outline: none;
+  }
+
+.butt {
+  border: 2px solid #f35626;
+  line-height: 1.375;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+
+  font-weight: 700;
+
+  color: #f35626;
+
+  cursor: pointer;
+  -webkit-animation: hue 60s infinite linear;
+}
+
+  .butt--primary {
+    background-color: #f35626;
+    color: #fff;
+  }
+
+.input {
+  border: 1px solid #c0c8c9;
+  border-radius: 4px;
+}
+
+
+/*-----------------------------------*\
+  $HEADER
+\*-----------------------------------*/
+
+.site__header {
+
+}
+
+  .site__title {
+    color: #f35626;
+    
+    background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 15s infinite linear;
+  }
+
+/*-----------------------------------*\
+  $ANIMATIONS
+\*-----------------------------------*/
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+.category img{
+    background-color: #FFF;
+}
+.category:hover img{
+    background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
+    -webkit-animation: hue 3s infinite linear;
+}
+
+.category:hover {
+    cursor: hand;
+    cursor: pointer;
 }
