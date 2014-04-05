@@ -125,7 +125,7 @@
             </div>
             <div class="col-md-3">
             <a title="scarecrowdance" href="#">
-            <img height="150" width="150" src="DanceMoves/Dougie.png" />
+            <img height="150" width="150" src="DanceMoves/Scarecrow.png" />
             <h3>Scarecrow</h3>
             </a>
             </div>
