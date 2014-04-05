@@ -59,9 +59,9 @@
           <br>
           <br>
           <br>
-          <div class="">
+          <div class="mastfoot">
             <div class="inner">
-              <p> DanceSea 2014</p>
+              <p> <a href="http://dancesea.herokuapp.com/">DanceSea</a> Built by <a href="http://www.seantburke.com/?r=dancesea">Sean Thomas Burke</a>, Sonal Prasad, and Pritika Natraj &copy; 2014</p>
             </div>
           </div>
 
