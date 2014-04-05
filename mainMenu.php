@@ -82,30 +82,64 @@
             </a>
             </div>
             <div class="col-md-3">
-            <a href="#">
+            <a title="spongebobdance" href="#">
             <img height="150" width="150" src="" />
-            <h3>title</h3>
+            <h3>The Spongebob</h3>
             </a>
             </div>
         </div>
         <br>
         <br>
-        <div class="row">
+        <div class="row items">
             <div class="col-md-3">
-            <img height="150" width="150" src="" />
-            <h3>title</h3>
+            <a title="shuffling" href="#">
+            <img height="150" width="150" src="DanceMoves/Bernie.jpg" />
+            <h3>Shuffling</h3>
+            </a>
             </div>
             <div class="col-md-3">
-            <img height="150" width="150" src="" />
-            <h3>title</h3>
+            <a title="robotdance" href="#">
+            <img height="150" width="150" src="DanceMoves/Dougie.png" />
+            <h3>The Robot</h3>
+            </a>
             </div>
             <div class="col-md-3">
-            <img height="150" width="150" src="" />
-            <h3>title</h3>
+            <a title="spidermandance" href="#">
+            <img height="150" width="150" src="DanceMoves/Jerk.jpg" />
+            <h3>The Spiderman</h3>
+            </a>
             </div>
             <div class="col-md-3">
+            <a title="breakdance" href="#">
             <img height="150" width="150" src="" />
-            <h3>title</h3>
+            <h3>Break Dancing</h3>
+            </a>
+            </div>
+        </div>
+        <div class="row items">
+            <div class="col-md-3">
+            <a title="twerk" href="#">
+            <img height="150" width="150" src="DanceMoves/Bernie.jpg" />
+            <h3>Twerk</h3>
+            </a>
+            </div>
+            <div class="col-md-3">
+            <a title="scarecrowdance" href="#">
+            <img height="150" width="150" src="DanceMoves/Dougie.png" />
+            <h3>Scarecrow</h3>
+            </a>
+            </div>
+            <div class="col-md-3">
+            <a title="spidermandance" href="#">
+            <img height="150" width="150" src="DanceMoves/Jerk.jpg" />
+            <h3>The Spiderman</h3>
+            </a>
+            </div>
+            <div class="col-md-3">
+            <a title="selfie" href="#">
+            <img height="150" width="150" src="" />
+            <h3>#Selfie</h3>
+            </a>
             </div>
         </div>
           
@@ -147,6 +181,7 @@
               success: function( data ) {
                 console.log(data);
                 urls = [];
+                datalength = data.data.records.length;
                 for(i = 0; i < data.data.records.length; ++i)
                 {
                     urls.push(data.data.records[i].videoUrl);
@@ -161,8 +196,8 @@
         var vinePlayer = videojs("vine_vid");
         function loadNext()
         {
-            console.log(urls[k]);
-            $("#vine_vid source").attr("src", urls[k++]);
+            console.log(urls[(k%datalength)]);
+            $("#vine_vid source").attr("src", urls[(k++%datalength)]);
             vinePlayer.currentTime(0);
             vinePlayer.load();
             vinePlayer.play();
