@@ -147,9 +147,9 @@
         <br>
         <div class="row items">
             <div class="col-md-3 category animated fadeIn">
-            <span title="gaspedal" href="#">
-            <img class="img-rounded" height="150" width="150" src="DanceMoves/GasPedal.png" />
-            <h3 class="site__title">Gas Pedal</h3>
+            <span title="breakdancing" href="#">
+            <img class="img-rounded" height="150" width="150" src="DanceMoves/BreakDance.png" />
+            <h3 class="site__title">Break Dancing</h3>
             </span>
             </div>
             <div class="col-md-3 category animated fadeIn">
