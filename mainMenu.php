@@ -89,26 +89,26 @@
             <div class="col-md-3 category animated fadeIn">
                 <span title="bernie" href="#">
                 <img class="img-rounded" height="150" width="150" src="DanceMoves/Bernie.png" />
-                <h3 class="site__title">The Bernie</h3 class="site__title">
+                <h3 class="site__title">The Bernie</h3>
                 </span>
             </div>
             <div class="col-md-3 category animated fadeIn">
                 <span title="dougie" href="#">
                 <img class="img-rounded" height="150" width="150" src="DanceMoves/Dougie.png" />
-                <h3 class="site__title">The Dougie</h3 class="site__title">
+                <h3 class="site__title">The Dougie</h3>
                 </span>
             </div>
             <div class="col-md-3 category animated fadeIn">
             <span title="jerkdance" href="#">
             <img class="img-rounded" height="150" width="150" src="DanceMoves/Jerk.png" />
             <h3 class="site__title">The 
-            Jerk</h3 class="site__title">
+            Jerk</h3>
             </span>
             </div>
             <div class="col-md-3 category animated fadeIn">
             <span title="spongebobdance" href="#">
             <img class="img-rounded" height="150" width="150" src="DanceMoves/Spongebob.png" />
-            <h3 class="site__title">The Spongebob</h3 class="site__title">
+            <h3 class="site__title">The Spongebob</h3>
             </span>
             </div>
         </div>
@@ -118,25 +118,25 @@
             <div class="col-md-3 category animated fadeIn">
             <span title="shuffling" href="#">
             <img class="img-rounded" height="150" width="150" src="DanceMoves/Shuffling.png" />
-            <h3 class="site__title">Shuffling</h3 class="site__title">
+            <h3 class="site__title">Shuffling</h3>
             </span>
             </div>
             <div class="col-md-3 category animated fadeIn">
             <span title="robotdance" href="#">
             <img class="img-rounded" height="150" width="150" src="DanceMoves/Robot.png" />
-            <h3 class="site__title">The Robot</h3 class="site__title">
+            <h3 class="site__title">The Robot</h3>
             </span>
             </div>
             <div class="col-md-3 category animated fadeIn">
             <span title="spidermandance" href="#">
             <img class="img-rounded" height="150" width="150" src="DanceMoves/Spiderman.png" />
-            <h3 class="site__title">The Spiderman</h3 class="site__title">
+            <h3 class="site__title">The Spiderman</h3>
             </span>
             </div>
             <div class="col-md-3 category animated fadeIn">
             <span title="breakdance" href="#">
             <img class="img-rounded" height="150" width="150" src="DanceMoves/BreakDance.png" />
-            <h3 class="site__title">Break Dancing</h3 class="site__title">
+            <h3 class="site__title">Break Dancing</h3>
             </span>
             </div>
         </div>
@@ -145,26 +145,26 @@
         <div class="row items">
             <div class="col-md-3 category animated fadeIn">
             <span title="gaspedal" href="#">
-            <img class="img-rounded" height="150" width="150" src="DanceMoves/Twerk.png" />
-            <h3 class="site__title">Twerk</h3 class="site__title">
+            <img class="img-rounded" height="150" width="150" src="DanceMoves/GasPedal.png" />
+            <h3 class="site__title">Gas Pedal</h3>
             </span>
             </div>
             <div class="col-md-3 category animated fadeIn">
             <span title="scarecrowdance" href="#">
             <img class="img-rounded" height="150" width="150" src="DanceMoves/Scarecrow.png" />
-            <h3 class="site__title">The Scarecrow</h3 class="site__title">
+            <h3 class="site__title">The Scarecrow</h3>
             </span>
             </div>
             <div class="col-md-3 category animated fadeIn">
             <span title="catdaddy" href="#">
             <img class="img-rounded" height="150" width="150" src="DanceMoves/CatDaddy.png" />
-            <h3 class="site__title">The Cat Daddy</h3 class="site__title">
+            <h3 class="site__title">The Cat Daddy</h3>
             </span>
             </div>
             <div class="col-md-3 category animated fadeIn">
             <span title="macarana" href="#">
             <img class="img-rounded" height="150" width="150" src="DanceMoves/Macarena.png" />
-            <h3 class="site__title">Macarana</h3 class="site__title">
+            <h3 class="site__title">Macarana</h3>
             </span>
             </div>
         </div>
@@ -193,14 +193,13 @@
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <script src="//vjs.zencdn.net/4.5/video.js"></script>
     <script>
-        
-        
         k=0;
-        
-        $(".items div").on("click", function(){
-        
-        $('#modal-title').html($(this).find("h3").html());
-        $.ajax({
+        console.log("javascript");
+        $(".category").on("click", function(){
+            $('#showModal').modal('show');
+            $('#modal-title').html($(this).find("h3").html());
+            
+            $.ajax({
               url: "/get.php",
               dataType: "JSON",
               type: "GET",
@@ -241,4 +240,9 @@
         
         $(".close_modal").on("click", function(){
             $('#showModal').modal('hide');
+        });
+        
+        </script>
+        </body>
+        </html>
       
