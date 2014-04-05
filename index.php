@@ -35,23 +35,24 @@
 
   <body>
 
+    
     <div class="site-wrapper">
-
+      
       <div class="site-wrapper-inner">
-
+        
         <div class="cover-container">
-
+          <img src="DanceSeaLogo.png" align="center" width="78%" height="30%">      
           <div class="inner cover">
+            
             <br>
             <br>
             <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <div class="well" style="background-color:#33333333;">
-            <h1 class="cover-heading">DanceSea</h1>
+            <div>
+            <!-- h1 class="cover-heading">DanceSea</h1 -->
+            <img src="waves.png" align="left" width="100%" height="40%" style="margin-bottom:5%;">
             </div>
+            <br>
+            <br>
             <br>
             <br>
             <br>
@@ -65,7 +66,7 @@
 
           <div class="mastfoot">
             <div class="inner">
-              <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+              <p>DanceSea 2014</p>
             </div>
           </div>
 

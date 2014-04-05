@@ -1,6 +1,8 @@
 /*
  * Globals
  */
+ 
+
 
 /* Links */
 a,
@@ -27,7 +29,8 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-image: url(Homepage.jpg);
+  background-color: #333;
+  /*background-image: url(Homepage.jpg);*/
 }
 body {
   color: #fff;
