@@ -241,9 +241,4 @@
         
         $(".close_modal").on("click", function(){
             $('#showModal').modal('hide');
-            vinePlayer.pause();
-        
-        });
-    </script>
-  </body>
-</html>
+      
