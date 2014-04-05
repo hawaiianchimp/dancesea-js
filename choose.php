@@ -38,18 +38,23 @@
       <div class="modal-dialog">
         <div id="modal-content" class="modal-content">
           <div class="modal-header">
-            <button type="button" class="close close_modal" aria-hidden="true">&times;</button>
-            <h4 width="100px" id="modal-title" class="modal-title site__title">Dance Vines</h4>
+            <button type="button" class="close close_modal btn-lg pull-left" aria-hidden="true">&times;</button><br>
+            <h4 id="modal-title" class="modal-title site__title">Dance Vines</h4>
           </div>
           <div id="modal-body" class="modal-body">
-            <video id="vine_vid" class="video-js vjs-default-skin"
-              controls preload="auto" width="550" height="550"
-              poster="waves.png">
-             <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
-            </video>
-          </div>
+                <video id="vine_vid" class="video-js vjs-default-skin"
+                  controls preload="auto" width="550" height="550"
+                  poster="waves.png">
+                 <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
+                </video>
+            </div>
           <div class="modal-footer">
-            <button class="btn btn-info close_modal">Close</button>
+            <button type="button" onClick="loadPrev();" class="btn pull-left">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+            </button>
+            <button type="button" onClick="loadNext();"class="btn pull-right">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+            </button>
           </div>
         </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->
@@ -145,7 +150,7 @@
         <div class="row items">
             <div class="col-md-3 category animated fadeIn">
             <span title="gaspedal" href="#">
-            <img class="img-rounded" height="150" width="150" src="DanceMoves/Twerk.png" />
+            <img class="img-rounded" height="150" width="150" src="DanceMoves/GasPedal.png" />
             <h3 class="site__title">Gas Pedal</h3>
             </span>
             </div>
@@ -231,6 +236,16 @@
             vinePlayer.play();
         }
         
+        function loadPrev()
+        {
+            console.log(urls[(k%datalength)]);
+            $("#vine_vid source").attr("src", urls[(k--%datalength)]);
+            vinePlayer.currentTime(0);
+            vinePlayer.load();
+            vinePlayer.play();
+        
+        }
+        
           vinePlayer.ready(function(){
           this.on("ended", function(){ 
             loadNext();
@@ -240,5 +255,10 @@
         
         $(".close_modal").on("click", function(){
             $('#showModal').modal('hide');
+            vinePlayer.pause();
         });
+        
+        </script>
+        </body>
+        </html>
       
