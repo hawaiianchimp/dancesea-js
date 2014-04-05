@@ -4,7 +4,7 @@ if(!$_GET)
 {
     $message['error'] = 'true';
     $message['message'] = 'Must provide url data';
-    return json_encode($message);
+    echo json_encode($message);
 }
 
 $qry_str = $_GET['tag'];
