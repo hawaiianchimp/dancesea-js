@@ -39,17 +39,17 @@
         <div id="modal-content" class="modal-content">
           <div class="modal-header">
             <button type="button" class="close close_modal" aria-hidden="true">&times;</button>
-            <h4 id="modal-title" class="modal-title">Dance Vines</h4>
+            <h4 width="100px" id="modal-title" class="modal-title site__title">Dance Vines</h4>
           </div>
           <div id="modal-body" class="modal-body">
             <video id="vine_vid" class="video-js vjs-default-skin"
-              controls preload="auto" width="500" height="500"
+              controls preload="auto" width="550" height="550"
               poster="waves.png">
              <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
             </video>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-default close_modal">Close</button>
+            <button class="btn btn-info close_modal">Close</button>
           </div>
         </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->
@@ -66,7 +66,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.php">DanceSea</a>
+      <a class="navbar-brand" href="index.php"><img src="backButton.png" style="margin-right:5px;" width="30em" height="30em">DanceSea</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -199,6 +199,7 @@
         
         $(".items div").on("click", function(){
         
+        $('#modal-title').html($(this).find("h3").html());
         $.ajax({
               url: "/get.php",
               dataType: "JSON",
@@ -216,7 +217,6 @@
                 }
                 loadNext();
                 $('#showModal').modal('show');
-                $('#modal-title').html($(this).find("h3").attr(""))
               }
             
         });
