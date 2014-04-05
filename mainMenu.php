@@ -76,7 +76,7 @@
             </a>
             </div>
             <div class="col-md-3">
-            <a title="jerk" href="#">
+            <a title="jerkdance" href="#">
             <img height="150" width="150" src="DanceMoves/Jerk.jpg" />
             <h3>The Jerk</h3>
             </a>
