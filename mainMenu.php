@@ -44,7 +44,7 @@
           <div id="modal-body" class="modal-body">
             <video id="vine_vid" class="video-js vjs-default-skin"
               controls preload="auto" width="500" height="500"
-              poster="DanceSeaLogo.png">
+              poster="waves.png">
              <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
             </video>
           </div>
