@@ -49,7 +49,9 @@
             <br>
             <br>
             <br>
+            <div class="well" style="background-color:#33333333;">
             <h1 class="cover-heading">DanceSea</h1>
+            </div>
             <br>
             <br>
             <br>
