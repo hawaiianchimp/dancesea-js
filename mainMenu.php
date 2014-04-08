@@ -224,7 +224,7 @@
                     datalength = data.data.records.length;
                     for(i = 0; i < data.data.records.length; ++i)
                     {
-                        urls.push(data.data.records[i].videoUrl);
+                        urls.push(data.data.records[i].videoLowURL);
                     }
                     loadNext();
                     $('#showModal').modal('show');
